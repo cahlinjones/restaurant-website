@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bella Italia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Bella Italia</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Reservation Date</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests">
+                                <option value="">Select...</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6+ Guests</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2>Visit Us</h2>
+                    <div class="contact-info-card">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h3>Address</h3>
+                                <p>123 Main Street<br>Your City, ST 12345</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h3>Phone</h3>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p>info@bellaitalia.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">🕐</div>
+                            <div class="info-content">
+                                <h3>Hours</h3>
+                                <p>Mon - Thu: 11am - 10pm<br>
+                                Fri - Sat: 11am - 11pm<br>
+                                Sunday: 12pm - 9pm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-placeholder">
+                        <div style="background-color: #bdc3c7; height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #7f8c8d;">
+                            <p>Map would go here<br>(Google Maps embed)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Italia</h3>
+                    <p>Bringing authentic Italian flavors to your table since 2010</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 11am - 10pm</p>
+                    <p>Friday - Saturday: 11am - 11pm</p>
+                    <p>Sunday: 12pm - 9pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📞 (555) 123-4567</p>
+                    <p>📧 info@bellaitalia.com</p>
+                    <p>📍 123 Main Street, Your City, ST 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bella Italia. All rights reserved. | Website by [Your Name]</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
